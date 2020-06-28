@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- pid:1:0 -->
+    <title>Автоматический обмен, ввод, вывод Payeer, Perfect Money, OKPAY, ADVCASH,NixMoney, BitCoin, BTC-E, Яндекс Деньги  на банки России и Казахстана</title> 
+    <link href="themes/old/css/site.css" rel="stylesheet">
+    <script src="code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="alternate" hreflang="en" ref="https://wmcentre.cc/en">
+    <link rel="alternate" hreflang="tr" ref="https://wmcentre.cc/tr">
+    <link rel="alternate" hreflang="kz" ref="https://wmcentre.cc/kz">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      type="text/css" media="all">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <nav id="w0" class="navbar-custom navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Мой личный кабинет</a>
+                        <div class="dropdown-menu cabs">
+                            <div class="login-block">
+                                <div class="title"> <i class="fa fa-key" aria-hidden="true"></i>
+                                    Личный кабинет
+                                </div>
+
+                                <div class="account clearfix">
+                                    <ul>
+                                        <li>
+                                            <a href="account.html">Личный кабинет</a>
+                                        </li>
+                                        <li>
+                                            <a href="operation.html">Ваши операции</a>
+                                        </li>
+                                        <li>
+                                            <a href="verification.html">Верификация аккаунта</a>
+                                        </li>
+                                        <li>
+                                            <a href="partnerstats.html">Партнерская статистика</a>
+                                        </li>
+                                        <li>
+                                            <a href="payouts.html">Выплата</a>
+                                        </li>
+                                        <li>
+                                            <a href="partnersadvtext.html">Рекламные материалы</a>
+                                        </li>
+                                        <li>
+                                            <a href="partnersfaq.html">Партнёрский FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/export/xml">export xml</a>
+                                        </li>
+                                        <li>
+                                            <a href="/export/txt">export txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html" data-method="post">Выход из акаунта</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="navbar-brand" href="index-autoriz.html"></a>
+                </div>
+                <div id="w0-collapse" class="collapse navbar-collapse">
+                    <ul id="w1" class="navbar-nav nav">
+                        <li>
+                            <a href="rates.html">Обмен</a>
+                        </li>
+                        <li>
+                            <a href="rules.html">Правила</a>
+                        </li>
+                        <li class="hidden-sm">
+                            <a href="warning.html">Предупреждение</a>
+                        </li>
+                         <li class="active hidden-sm hidden-md">
+                            <a href="aml.html">Политика безопасности</a>
+                        </li>
+                         <li class="hidden-sm hidden-md">
+                            <a href="stat.html">Статьи</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Выйти</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right lang-widget">
+                        <li>
+                            <div id="lang">
+                                <ul id="langs" class="langs">
+                                    <li class="item-langs">ru</li>
+                                    <li class="item-langs">en</li>
+                                    <li class="item-langs">tu</li>
+                                    <li class="item-langs">kz</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="account-block">
+                        <div class="top-part hidden-xs">
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-primary dropdown-toggle " data-toggle="dropdown">Мой личный кабинет</a>
+                                <div class="dropdown-menu cabs">
+                                    <div class="login-block">
+                                        <div class="title"> <i class="fa fa-key" aria-hidden="true"></i>
+                                            Личный кабинет
+                                        </div>
+
+                                        <div class="account clearfix">
+                                            <ul>
+                                                <li>
+                                                    <a href="account.html">Личный кабинет</a>
+                                                </li>
+                                                <li>
+                                                    <a href="operation.html">Ваши операции</a>
+                                                </li>
+                                                <li>
+                                                    <a href="verification.html">Верификация аккаунта</a>
+                                                </li>
+                                                <li>
+                                                    <a href="partnerstats.html">Партнерская статистика</a>
+                                                </li>
+                                                <li>
+                                                    <a href="payouts.html">Выплата</a>
+                                                </li>
+                                                <li>
+                                                    <a href="partnersadvtext.html">Рекламные материалы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="partnersfaq.html">Партнёрский FAQ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/export/xml">export xml</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/export/txt">export txt</a>
+                                                </li>
+                                                <li>
+                                                    <a href="index.html" data-method="post">Выход из акаунта</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-part"></div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="background-container">
+            <div class="container">
+                <div class="row">
+
+                    <div class="bottom-part header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="columns align-middle bottom-part-block">
+
+                                        <div class="column">
+                                            <div class="contacts-1">
+                                                <a class="nav-link email" href="mailto:support@wmcentre.cc">
+                                                    <i class="fa fa-envelope " aria-hidden="true"></i>
+                                                    support@wmcentre.cc
+                                                </a>
+                                                <div class="nav-link working-time">
+                                                    <p>
+                                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                        Круглосуточно.Без выходных
+                                                    </p>
+
+                                                    <p>Режим работы оператора:</p>
+
+                                                    <p>Пн-Пт с 07:00 до 01:00 UTC +6</p>
+
+                                                    <p>Сб-Вс - свободный график</p>
+                                                </div>
+                                            </div>
+                                            <div class="columns align-middle contacts-2">
+                                                <div class="column">
+                                                    <div class="phone-support">
+                                                        <i class="fa fa-phone" style="color: #0062C5;" aria-hidden="true"></i>
+                                                        +7 705 224 10 80
+                                                    </div>
+                                                </div>
+
+                                                <div class="column right">
+                                                    <div class="account-block">
+                                                        <div class="top-part">
+                                                            <div class="dropdown">
+                                                                <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Мой личный кабинет</a>
+                                                                <div class="dropdown-menu cab-drop">
+                                                                    <div class="login-block">
+                                                                        <div class="title">
+                                                                            <i class="fa fa-key" aria-hidden="true"></i>
+                                                                            Личный кабинет
+                                                                        </div>
+
+                                                                        <div class="account clearfix">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="account.html">Личный кабинет</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="operation.html">Ваши операции</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="verification.html">Верификация аккаунта</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="partnerstats.html">Партнерская статистика</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="payouts.html">Выплата</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="partnersadvtext.html">Рекламные материалы</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="partnersfaq.html">Партнёрский FAQ</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/export/xml">export xml</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="/export/txt">export txt</a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="index.html" data-method="post">Выход из акаунта</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom-part"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="body-content">
+
+                <div class="row">
+                    <div class="col-sm-8 col-md-9">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a href="index-autoriz.html">Главная</a>
+                            </li>
+                            <li class="active">НОВОСТИ</li>
+                        </ul>
+                        <div class="site-profile">
+                            <h1>НОВОСТИ</h1>
+
+                            <div id="w0" class="list-view">
+                                <div class="summary">
+                                    Показаны записи <b>2-2</b>
+                                    из <b>2</b>
+                                    .
+                                </div>
+                                <div class="rvs-bl">
+                                    <div class="item" data-key="12">
+                                        <a href="full-news.html">Внимание!! Мошенники!!!</a>
+                                        <p style="color: #9e9e9e;">2016-08-23</p>
+
+                                        <p>
+                                            <p style="text-align:justify">
+                                                Уважаемые клиенты, обратите внимание, последнее время участились случаи мошенничества. Злоумышленники предлагают выдать кредит, но перед этим просят погасить займ, путем покупки средств платежной системы Perfect Money (может быть любой другой кошелек). Грамотно консультируют жертву как создать кошелек в данной платежной системе, и купить средства через наш и другие похожие сервисы, после того как последний обмен завершается, мошенники выводят средства с кошелька жертвы в неизвестном направлении.
+                                            </p>
+
+                                            <a class="no-dc" href="full-news.html">
+                                                <button type="button" class="btn btn-primary" title="Подробнее">Подробнее</button>
+                                            </a>
+
+                                        </div>
+
+                                        <hr>
+                                        <div class="item" data-key="12">
+                                            <a href="full-news.html">Внимание!! Мошенники!!!</a>
+                                            <p style="color: #9e9e9e;">2016-08-23</p>
+
+                                            <p>
+                                                <p style="text-align:justify">
+                                                    Уважаемые клиенты, обратите внимание, последнее время участились случаи мошенничества. Злоумышленники предлагают выдать кредит, но перед этим просят погасить займ, путем покупки средств платежной системы Perfect Money (может быть любой другой кошелек). Грамотно консультируют жертву как создать кошелек в данной платежной системе, и купить средства через наш и другие похожие сервисы, после того как последний обмен завершается, мошенники выводят средства с кошелька жертвы в неизвестном направлении.
+                                                </p>
+
+                                                <a class="no-dc" href="full-news.html">
+                                                    <button type="button" class="btn btn-primary" title="Подробнее">Подробнее</button>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-3">
+                                <div class="operator">
+                                    <p>10.04.2017 09:08:01</p>
+                                    <div class="statusworkblock">
+                                        <div class="statusworkblockvn online">
+                                            Оператор
+                                            <span class="opstatus">Онлайн</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message clearfix">
+                                    <h3>Объявление</h3>
+                                    <p> <strong>По направлениям, требующим верификации, все операции после идентификации проходят без задержек.</strong> 
+                                    </p>
+
+                                    <p> <strong>По&nbsp;запросу можем увеличить резерв, любого представленного казахстанского &nbsp;банка до необходимой суммы.</strong> 
+                                    </p>
+
+                                    <p>
+                                        <strong>Срок обработки заявок в автоматическом режиме - 5 минут.</strong>
+                                    </p>
+
+                                    <p>
+                                        <strong>Доступен автоматический&nbsp;обмен Bitcoin</strong>
+                                        <strong>.</strong>
+                                    </p>
+
+                                    <p>
+                                        <strong>
+                                            Все заявки с/на электронные валюты обрабатываются в автоматическом режиме.
+                                        </strong>
+                                    </p>
+
+                                    <p>
+                                        <strong>С уважением, ваш WMCenter!</strong>
+                                    </p>
+
+                                    <p>&nbsp;</p>
+                                </div>
+
+                                <div class="message clearfix">
+                                    <h3>Последняя транзакция</h3>
+                                    <p>Последняя транзакция</p>
+                                    <div class="wnewauthorto">1.</div>
+                                    <div class="wnewsdateto">2016-11-09 07:14:51</div>
+                                    <div class="clearfix"></div>
+                                    <div class="wotzline">
+                                        <div class="wotzivtextto">
+                                            <img src="img/pfm.png">
+                                            1.04 USD
+                                            <span style="padding:5px; margin:0 10px; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJCAYAAAARml2dAAAAjUlEQVQImWP4WmUr+b3S0Z4BHXyvsov6Xu3w71u1Q/eqUAZmuMTXGvvM7zWO/7/XOP7/Vu2w6VmaMReGxPcax//fqx123c5VYWf4VuVQjiJR4/j/W5V9IcPXascsFMFqx5Pvyo350e04/KHCRhDiqmqH6O81jv+/1jguvJ/gwAF31YcaO8VvlQ4h6N4AAHKCWqJUPetAAAAAAElFTkSuQmCC) no-repeat 0 center;"></span>
+                                            <img src="img/cur46.png">1 USD</div>
+                                    </div>
+                                </div>
+
+                                <div class="widget-reviews">
+                                    <div class="widgettitleotzivs">
+                                        Отзывы
+                                        <a href="reviews.html" class="wmorenews">Все отзывы</a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="wnewauthorto">Evgeniia,</div>
+                                    <div class="wnewsdateto">2016-10-25</div>
+                                    <div class="clearfix"></div>
+                                    <div class="wotzline">
+                                        <div class="wotzivtextto">Быстро не успела оглянуться - спасибо большое!!!</div>
+                                    </div>
+                                    <div class="wnewauthorto">Виталий,</div>
+                                    <div class="wnewsdateto">2016-10-24</div>
+                                    <div class="clearfix"></div>
+                                    <div class="wotzline">
+                                        <div class="wotzivtextto">Красавчики! 1,5 минуты и оператор всё сделал!</div>
+                                    </div>
+                                    <div class="wnewauthorto">Айгуль,</div>
+                                    <div class="wnewsdateto">2016-10-23</div>
+                                    <div class="clearfix"></div>
+                                    <div class="wotzline">
+                                        <div class="wotzivtextto">
+                                            Отлично сработал обменник в выходные дни ночью !!! Несколько часов и мои деньги с перфекта  перешли на банковскую карту! Спасибо огромное!  Рекомендую всем интернет пользователям!
+                                        </div>
+                                    </div>
+                                    <div class="wnewauthorto">Дмитрий,</div>
+                                    <div class="wnewsdateto">2016-10-20</div>
+                                    <div class="clearfix"></div>
+                                    <div class="wotzline">
+                                        <div class="wotzivtextto">все качественно и быстро! спасибо!</div>
+                                    </div>
+                                    <div class="wnewauthorto">Ирина,</div>
+                                    <div class="wnewsdateto">2016-10-19</div>
+                                    <div class="clearfix"></div>
+                                    <div class="wotzline">
+                                        <div class="wotzivtextto">Благодарю за мгновенный перевод с ПМ на BTC-кошелёк</div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#largeModal" title="Оставить отзыв">Оставить отзыв</button>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="partners-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+	                    <div class="nst"><span>Новости</span> <a href="news.html" class="wmorenews">Все новости</a></div>
+	                    <div class="row">
+		                    <div class="clearfix"></div>
+	                    <div class="col-sm-3">
+		                     <div class="wnewline">
+                                <div class="wnewsdate">2016-08-23</div>
+                                <div class="clear"></div>
+                                <div class="wotzivtext">
+                                    <a href="full-news.html">Заголовок новости в несколько строк</a>
+                                </div>
+                            </div>
+	                    </div>
+	                     <div class="col-sm-3">
+		                     <div class="wnewline">
+                                <div class="wnewsdate">2016-08-23</div>
+                                <div class="clear"></div>
+                                <div class="wotzivtext">
+                                    <a href="full-news.html">Заголовок новости в несколько строк</a>
+                                </div>
+                            </div>
+	                    </div>
+	                     <div class="col-sm-3">
+		                     <div class="wnewline">
+                                <div class="wnewsdate">2016-08-23</div>
+                                <div class="clear"></div>
+                                <div class="wotzivtext">
+                                    <a href="full-news.html">Заголовок новости в несколько строк</a>
+                                </div>
+                            </div>
+	                    </div>
+	                     <div class="col-sm-3">
+		                     <div class="wnewline">
+                                <div class="wnewsdate">2016-08-23</div>
+                                <div class="clear"></div>
+                                <div class="wotzivtext">
+                                    <a href="full-news.html">Заголовок новости в несколько строк</a>
+                                </div>
+                            </div>
+	                    </div>
+	                    
+	                    </div>
+	                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="fade modal" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div id="modalHeader" class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <span id="modalHeaderTitle"></span>
+                    </div>
+                    <div class="modal-body">
+
+                        <div id="modalContents">
+                            <div class="demand-create">
+
+                                <form id="w0" action="/demand/create?currency_id=25" method="post">
+                                    <input type="hidden" name="_frontendCSRF1" value="LmxMcGZsM3ZHBBU9Vjt9BHgNDwYiO3EAZ1UcBBYgdw5AXCQTVT8BMA==">
+                                    <div class="form-group field-demand-email required">
+                                        <label class="control-label" for="demand-email">Email</label>
+                                        <input type="text" id="demand-email" class="form-control" name="Demand[email]" maxlength="255">
+
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <p>Сколько вы хотите заказать Perfect Money USD?</p>
+
+                                    <div class="form-group field-demand-amount required">
+                                        <label class="control-label" for="demand-amount">Сумма</label>
+                                        <input type="text" id="demand-amount" class="form-control" name="Demand[amount]">
+
+                                        <div class="help-block"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">Отправить</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+	     <div class="container">
+		     <div class="row">
+        <p class="pull-left">&copy; 2014-2017 WMcentre.cc Быстрый обмен валют!</p>
+        <p class="pull-right">
+     
+            Сайт изготовлен
+            <a href="#">SOFORP</a>
+        </p>
+		     </div>
+	     </div>
+    </footer>
+
+     
+
+            <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Оставить отзыв</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="modalContent">
+                                <div class="review-form">
+
+                                    <form id="create-review-form" action="/review/create" method="post">
+                                        <input type="hidden" name="_frontendCSRF1" value="Llg0OFpSY0x3MmQVABo0AG8bR2ESM1R1Gz5VYh8VBSBtC1FbFxwCIA==">
+
+                                        <div class="form-group field-review-name required">
+                                            <label class="control-label" for="review-name">Имя</label>
+                                            <input type="text" id="review-name" class="form-control" name="Review[name]">
+
+                                            <div class="help-block"></div>
+                                        </div>
+
+                                        <div class="form-group field-review-message required">
+                                            <label class="control-label" for="review-message">Текст сообщения</label>
+                                            <textarea id="review-message" class="form-control" name="Review[message]"></textarea>
+
+                                            <div class="help-block"></div>
+                                        </div>
+                                        <br>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+        </html>
